@@ -1,9 +1,10 @@
 module Jekyll
   class ShowMoreTagBlock < Liquid::Block
+  include Jekyll::Filters
 
     def render(context)
       text = super
-      "<details><summary>More...</summary>#{text}</details>"
+      "<details><summary>More...</summary>#{markdownify(text)}</details>"
     end
 
   end
