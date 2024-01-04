@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'jekyll', '3.9.3'
 gem 'kramdown', '2.3.2'
 gem 'kramdown-parser-gfm', '1.1.0'
+gem 'jekyll-remote-theme', '0.4.3'
 
 group :jekyll_plugins do
   gem 'jekyll-coffeescript', '1.1.1'
