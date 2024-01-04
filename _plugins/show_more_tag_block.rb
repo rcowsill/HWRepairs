@@ -1,10 +1,11 @@
 module Jekyll
   class ShowMoreTagBlock < Liquid::Block
-  include Jekyll::Filters
 
     def render(context)
-      text = super
-      "<details><summary>More...</summary>#{markdownify(text)}</details>"
+      site = context.registers[:site]
+      converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+      text = converter.convert(super)
+      "<details><summary>More...</summary>#{text}</details>"
     end
 
   end
