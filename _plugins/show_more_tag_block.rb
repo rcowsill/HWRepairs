@@ -1,3 +1,5 @@
+puts "before ShowMoreTagBlock... "
+
 module Jekyll
   class ShowMoreTagBlock < Liquid::Block
 
@@ -10,3 +12,5 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('show_more', Jekyll::ShowMoreTagBlock)
+
+puts "after ShowMoreTagBlock... "
