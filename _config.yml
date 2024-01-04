@@ -1,6 +1,7 @@
-remote_theme: pages-themes/slate@v0.2.0
 title: Hardware Repairs
 description: Pages describing some repairs I've done
+repository: rcowsill/HWRepairs
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-coffeescript
   - jekyll-commonmark-ghpages
