@@ -18,5 +18,6 @@ group :jekyll_plugins do
   gem 'jekyll-relative-links', '0.6.1'
   gem 'jekyll-remote-theme', '0.4.3'
   gem 'jekyll-sass-converter', '1.5.2'
+  gem 'jekyll-seo-tag', '2.8.0'
   gem 'jekyll-titles-from-headings', '0.5.3'
 end
