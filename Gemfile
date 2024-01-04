@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'jekyll', '3.9.3'
 gem 'kramdown', '2.3.2'
 gem 'kramdown-parser-gfm', '1.1.0'
-gem 'jekyll-remote-theme', '0.4.3'
 
 group :jekyll_plugins do
   gem 'jekyll-coffeescript', '1.1.1'
@@ -17,5 +16,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate', '1.1.0'
   gem 'jekyll-readme-index', '0.3.0'
   gem 'jekyll-relative-links', '0.6.1'
+  gem 'jekyll-remote-theme', '0.4.3'
+  gem 'jekyll-sass-converter', '1.5.2'
   gem 'jekyll-titles-from-headings', '0.5.3'
 end
