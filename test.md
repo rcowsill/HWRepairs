@@ -14,12 +14,13 @@
 * **[https://github.com/rcowsill/HWRepairs](https://github.com/rcowsill/HWRepairs)** (View [Readme](https://github.com/rcowsill/HWRepairs/blob/main/README.md))
   - source repo
 
-{% show_more Some More?... %}
+<details>
+<summary>More...</summary>
+
 * **[https://github.com/rcowsill/HWRepairs](https://github.com/rcowsill/HWRepairs)** (View [Readme](https://github.com/rcowsill/HWRepairs/blob/main/README.md))
 * **[https://github.com/rcowsill/HWRepairs](https://github.com/rcowsill/HWRepairs)** (View [Readme](https://github.com/rcowsill/HWRepairs/blob/main/README.md))
   - source repo
-
-{% endshow_more %}
+</details>
 
 #### Category 2.1.1
 
