@@ -13,3 +13,6 @@ plugins:
   - jekyll-readme-index
   - jekyll-relative-links
   - jekyll-titles-from-headings
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end, no_auto_typographic]
