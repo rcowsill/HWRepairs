@@ -1,3 +1,4 @@
+<!-- Some sort of HTML comment -->
 ## Category 1
 
 * **[https://github.com/rcowsill/HWRepairs](https://github.com/rcowsill/HWRepairs)** (View [Readme](https://github.com/rcowsill/HWRepairs/blob/main/README.md))
