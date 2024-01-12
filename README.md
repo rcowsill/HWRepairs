@@ -3,5 +3,5 @@
 [Main Page](Something/Whatnot)
 
 ```
-Site github: {{ site.github }} 
+page layout: {{ page.layout }} 
 ```
