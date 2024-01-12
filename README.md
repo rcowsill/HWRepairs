@@ -2,5 +2,6 @@
 
 [Main Page](Something/Whatnot)
 
-Page title: {{ page.title }} 
-Site title: {{ site.title }} 
+Page github: {{ page.github }} 
+
+Site github: {{ site.github }} 
