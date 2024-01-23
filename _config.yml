@@ -9,3 +9,10 @@ optional_front_matter:
   remove_originals: true
 readme_index:
   remove_originals: true
+defaults:
+  -
+    scope:
+      path: "Electronics/USCI40_demo/docs"
+    values:
+      permalink: "Electronics/USCI40_demo/:title:output_ext"
+      submodule_url: "https://github.com/rcowsill/TestCards"
