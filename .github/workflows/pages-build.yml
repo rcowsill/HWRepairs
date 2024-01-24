@@ -27,7 +27,7 @@ jobs:
           submodules: recursive
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            '*/'
+            */
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
