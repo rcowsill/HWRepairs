@@ -9,3 +9,21 @@ optional_front_matter:
   remove_originals: true
 readme_index:
   remove_originals: true
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "**/LICENSE"
+  - "**/*.asm"
+  - "**/*.c"
+  - "**/*.cmd"
+  - "**/*.h"
+
+
