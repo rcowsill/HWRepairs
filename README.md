@@ -6,7 +6,7 @@
 page layout: {{ page.layout }} 
 ```
 
-{% show_more summary="summary..." %}
+{% show_more summary... %}
 Details etc...
 {% endshow_more %}
 
