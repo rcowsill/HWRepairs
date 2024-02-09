@@ -14,9 +14,8 @@ Details etc...
 
 {%- if site.posts.size > 0 %}
 ## Posts
-
-  {%- for post in site.posts -%}
+  {% for post in site.posts -%}
 * [{{ post.title }}]({{ post.url }}) ({{ post.date }})
   - {{ post.excerpt }}
-  {%- endfor -%}
+  {%- endfor %}
 {%- endif -%}
