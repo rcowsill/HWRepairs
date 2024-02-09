@@ -20,4 +20,7 @@ Details etc...
 {% include post-list.html limit=3 -%}
 {% endif -%}
 
-`Page.title = {{ page.title }}`
+`page.title = {{ page.title }}`
+`site.title = {{ site.title }}`
+`site.description = {{ site.description }}`
+`site.tagline = {{ site.tagline }}`
