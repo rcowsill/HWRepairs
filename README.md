@@ -15,5 +15,5 @@ Details etc...
 {% if site.posts.size > 0 -%}
 ## Posts
 
-{% include post-list.html limit: 3 -%}
+{% include post-list.html limit=3 -%}
 {% endif -%}
