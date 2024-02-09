@@ -34,10 +34,10 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
-        {% if site.tags.size > 0 %}
+        {% assign unique_tags = page.tags | uniq %}
+        {% if unique_tags.size > 0 %}
         <hr>
         <ul>
-          {% assign unique_tags = page.tags | uniq %}
           {% for tag in unique_tags %}
             <li>{{ tag }}</li>
           {% endfor %}
