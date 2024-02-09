@@ -17,3 +17,5 @@ Details etc...
 
 {% include post-list.html limit=3 -%}
 {% endif -%}
+
+`Page.title = {{ page.title }}`
