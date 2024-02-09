@@ -18,7 +18,7 @@ Details etc...
 <ul>
   {% for post in site.posts -%}
   <li>
-    [{{ post.title }}]({{ post.url }}) ({{ post.date | date: %e %b %Y }})
+    <a href="{{ post.url }}">{{ post.title }} ({{ post.date | date: %e %b %Y }})</a>
     <ul><li>{{ post.excerpt | split: "<!-- page_excerpt -->" | last }}</li></ul>
   </li>
   {%- endfor %}
