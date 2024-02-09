@@ -35,6 +35,13 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      - name: Upload posts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-posts
+          path: "_posts/"
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
     environment:
