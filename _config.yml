@@ -11,7 +11,14 @@ readme_index:
   remove_originals: true
 collections:
   posts:
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: "/blog/:year/:month/:day/:title/"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      excerpt_separator: "<!-- endpage_excerpt -->"
 exclude:
   - .sass-cache/
   - .jekyll-cache/
