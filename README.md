@@ -16,11 +16,12 @@ Details etc...
 ## Posts
 
 <ul>
-  {% for post in site.posts -%}
+  {%- assign latest_posts = site.posts | slice: 0, 1 -%}
+  {%- for post in latest_posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }} ({{ post.date | date: %e %b %Y }})</a>
     <ul><li>{{ post.excerpt | split: "<!-- page_excerpt -->" | last }}</li></ul>
   </li>
   {%- endfor %}
 </ul>
-{%- endif -%}
+{%- endif %}
