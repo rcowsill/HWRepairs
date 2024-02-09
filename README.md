@@ -14,8 +14,13 @@ Details etc...
 
 {%- if site.posts.size > 0 %}
 ## Posts
+
+<ul>
   {% for post in site.posts -%}
-* [{{ post.title }}]({{ post.url }}) ({{ post.date | date: %e %b %Y }})
-  - {{ post.excerpt | split: "<!-- page_excerpt -->" | last }}
+  <li>
+    [{{ post.title }}]({{ post.url }}) ({{ post.date | date: %e %b %Y }})
+    <ul><li>{{ post.excerpt | split: "<!-- page_excerpt -->" | last }}</li></ul>
+  </li>
   {%- endfor %}
+</ul>
 {%- endif -%}
