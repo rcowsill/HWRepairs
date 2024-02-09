@@ -5,6 +5,7 @@ remote_theme: pages-themes/slate@v0.2.0
 kramdown:
   input: GFM
   gfm_quirks: [paragraph_end, no_auto_typographic]
+excerpt_separator: "<!-- endpage_excerpt -->"
 optional_front_matter:
   remove_originals: true
 readme_index:
@@ -12,13 +13,6 @@ readme_index:
 collections:
   posts:
     permalink: "/blog/:year/:month/:day/:title/"
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      excerpt_separator: "<!-- endpage_excerpt -->"
 exclude:
   - .sass-cache/
   - .jekyll-cache/
