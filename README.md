@@ -12,16 +12,8 @@ Details etc...
 {% endshow_more %}
 {% endraw %}
 
-{%- if site.posts.size > 0 %}
+{% if site.posts.size > 0 -%}
 ## Posts
 
-<ul>
-  {%- assign latest_posts = site.posts | slice: 0, 1 -%}
-  {%- for post in latest_posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%e %b %Y" | strip }})
-    <ul><li>{{ post.excerpt | split: "<!-- page_excerpt -->" | last }}</li></ul>
-  </li>
-  {%- endfor %}
-</ul>
-{%- endif %}
+{% include "post-list" -%}
+{% endif -%}
