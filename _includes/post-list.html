@@ -1,0 +1,20 @@
+{% comment -%}
+# Parameters:
+#   include.posts - Array of posts to include in the list (required)
+#   include.limit - Maximum number of posts to show. Shows all posts by default
+#   include.class - CSS class applied to the outer list. Defaults to "post-list"
+{% endcomment -%}
+
+{% assign posts_to_show = include.posts -%}
+{% if limit -%}
+{% assign posts_to_show = posts_to_show | slice: 0, limit -%}
+{% endif -%}
+
+<ul class="{{ include.list-class | default: "post-list" }}">
+  {% for post in posts_to_show -%}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%e %b %Y" | strip }})
+    <ul><li>{{ post.excerpt | split: "<!-- page_excerpt -->" | last }}</li></ul>
+  </li>
+  {% endfor -%}
+</ul>
