@@ -15,5 +15,5 @@ Details etc...
 {% if site.posts.size > 0 -%}
 ## Posts
 
-{% include "post-list" -%}
+{% include post-list.html -%}
 {% endif -%}
