@@ -16,6 +16,6 @@ Details etc...
 ## Posts
   {% for post in site.posts -%}
 * [{{ post.title }}]({{ post.url }}) ({{ post.date | date: %e %b %Y }})
-  - {{ post.excerpt |  }}
+  - {{ post.excerpt | split: "<!-- page_excerpt -->" | last }}
   {%- endfor %}
 {%- endif -%}
