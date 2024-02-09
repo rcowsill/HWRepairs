@@ -12,7 +12,10 @@ Details etc...
 {% endshow_more %}
 {% endraw %}
 
-page.tags.size = {{ page.tags.size }}
-page.tags = {{ page.tags }}
-site.tags.size = {{ site.tags.size }}
-site.tags = {{ site.tags }}
+
+{% if site.posts.size > 0 %}
+## Posts
+  {% for post in site.posts %}
+    * {{ post.url }}
+  {% endfor %}
+{% endif %}
