@@ -11,3 +11,8 @@ page layout: {{ page.layout }}
 Details etc...
 {% endshow_more %}
 {% endraw %}
+
+page.tags.size = {{ page.tags.size }}
+page.tags = {{ page.tags }}
+site.tags.size = {{ site.tags.size }}
+site.tags = {{ site.tags }}
