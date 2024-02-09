@@ -19,3 +19,8 @@ body {
 li li {
   list-style: none;
 }
+
+/* Hide footnotes and their references in post excerpts */
+.post-list :is(.footnotes, .footnote) {
+  display: none;
+}
