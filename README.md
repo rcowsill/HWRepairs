@@ -16,6 +16,9 @@ Details etc...
 
 {% if site.posts.size > 0 -%}
 ## Posts
-
-{% include post-list.html limit=3 -%}
+{% assign post_limit = 2 -%}
+{% include post-list.html limit=post_limit -%}
+{% if site.posts.size > post_limit -%}
+**[More...](\blog)**
+{% endif -%}
 {% endif -%}
