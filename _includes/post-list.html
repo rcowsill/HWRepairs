@@ -7,7 +7,7 @@
 {% endcomment -%}
 
 {% assign posts_to_show = include.posts | default: site.posts -%}
-{% if limit -%}
+{% if include.limit -%}
 {% assign posts_to_show = posts_to_show | slice: 0, limit -%}
 {% endif -%}
 {% assign input_excerpt_start = include.excerpt_start | default: "<!-- page_excerpt -->" -%}
