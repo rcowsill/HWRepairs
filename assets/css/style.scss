@@ -8,11 +8,27 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  /* custom properties */
+  --corner-radius: 6px;
 }
 
 /* Make main content fill all remaining space after header/footer is accounted for */
 #main_content_wrap {
   flex: 1;
+}
+
+/* Hang the banner below the header, use link color as background */
+#forkme_banner {
+  top: 100%;
+  color: revert;
+  background-color: currentColor;
+  border-bottom-left-radius: --var(corner-radius);
+  border-bottom-right-radius: --var(corner-radius);
+}
+
+#forkme_label {
+  color: #fff;
 }
 
 /* Hide markers on nested list items */
