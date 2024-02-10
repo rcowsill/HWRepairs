@@ -1,0 +1,15 @@
+---
+tags: test1
+---
+
+# Test Post 3
+
+<!-- page_excerpt -->
+This is a third test post showing how excerpts and the post index will work. There needs to be a decent amount
+of content in this first paragraph for **testing** purposes. It will be interesting to see how this looks on the
+index page. _Will it look ok?_
+
+What happens if the excerpt is longer than a single paragraph?
+<!-- endpage_excerpt -->
+
+This paragraph is just here to make sure we don't excerpt the whole post...
