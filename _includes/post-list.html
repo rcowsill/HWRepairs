@@ -20,7 +20,7 @@
     <ul>
       {% for tag in post.tags | uniq -%}
         <li>tag</li>
-      {%  endif -%}
+      {%  endfor -%}
     </ul>
   </li>
   {% endfor -%}
